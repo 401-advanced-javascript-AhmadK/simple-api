@@ -7,8 +7,8 @@ Ahmad K. Al-Mahasneh
 
 ### Links and Resources
 
-- [submission PR]()
-- [ci/cd] () (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-AhmadK/simple-api/pull/1) (Pull Request)
+- [ci/cd](https://github.com/401-advanced-javascript-AhmadK/simple-api/actions) (GitHub Actions) (no tests)
 
 #### How to initialize/run your application (where applicable)
 
