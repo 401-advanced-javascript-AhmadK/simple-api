@@ -1,0 +1,254 @@
+{
+    "openapi" : "3.0.1",
+    "info" : {
+      "title" : "Ahmad K.",
+      "description" : "My First API ooooooohhh",
+      "version" : "0.1"
+    },
+    "servers" : [ {
+      "url" : "http://localhost:3000"
+    } ],
+    "paths" : {
+      "/products/4" : {
+        "put" : {
+          "description" : "Updated the content of ID number 4",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"_id\": 4,\n    \"category\": \"camera\",\n      \"name\": \"Apple\",\n      \"display_name\": \"iPhone 11 pro max\",\n      \"description\": \"iPhone's flagship Smartphone\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Udated content",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "delete" : {
+          "description" : "Deleted it because i want to",
+          "responses" : {
+            "200" : {
+              "description" : "Deleted!!!",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/categories/5" : {
+        "put" : {
+          "description" : "Added a category with ID 5",
+          "requestBody" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/body_1"
+                },
+                "examples" : {
+                  "0" : {
+                    "value" : "{\n    \"_id\": 5,\n    \"name\": \"camera\",\n      \"display_name\": \"SLR\",\n      \"description\": \"a single-lens reflect camera ..again\"\n}"
+                  }
+                }
+              }
+            }
+          },
+          "responses" : {
+            "200" : {
+              "description" : "Updated it's content.. because i can",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "delete" : {
+          "description" : "Deleted it... because we broke up..",
+          "responses" : {
+            "200" : {
+              "description" : "a bad break-up... give me a 10 to wipe my tears",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/products" : {
+        "get" : {
+          "description" : "i get the data",
+          "responses" : {
+            "200" : {
+              "description" : "got it!!",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "post" : {
+          "description" : "Created a new id content to update it later",
+          "responses" : {
+            "201" : {
+              "description" : "created it!!",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "/categories" : {
+        "get" : {
+          "description" : "get the data!!",
+          "responses" : {
+            "200" : {
+              "description" : "got it!!",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "post" : {
+          "description" : "created the id",
+          "responses" : {
+            "201" : {
+              "description" : "created!!",
+              "content" : {
+                "application/json; charset=utf-8" : {
+                  "schema" : {
+                    "type" : "string"
+                  },
+                  "examples" : { }
+                }
+              }
+            }
+          },
+          "servers" : [ {
+            "url" : "http://localhost:3000"
+          } ]
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      }
+    },
+    "components" : {
+      "schemas" : {
+        "body" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "_id" : {
+              "type" : "integer"
+            },
+            "category" : {
+              "type" : "string"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        },
+        "body_1" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "description" : {
+              "type" : "string"
+            },
+            "_id" : {
+              "type" : "integer"
+            },
+            "display_name" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }

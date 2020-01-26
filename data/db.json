@@ -1,0 +1,45 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "camera",
+      "display_name": "DSLR",
+      "description": "a Dual single-lens reflect camera"
+    },
+    {
+      "_id": 2,
+      "name": "camera",
+      "display_name": "SLR",
+      "description": "Single Lens-Reflect camera"
+    },
+    {
+      "name": "camera",
+      "display_name": "Smart Phone Camera",
+      "description": "Mirrorless Camera",
+      "_id": 4
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "camera",
+      "name": "canon",
+      "display_name": "Canon 1DX Mark III",
+      "description": "Canon's flagship Full Frame camera"
+    },
+    {
+      "_id": 2,
+      "category": "camera",
+      "name": "Sony",
+      "display_name": "Sony a7r IV",
+      "description": "Sony's flagship Full Frame Mirror less camera"
+    },
+    {
+      "_id": 3,
+      "category": "camera",
+      "name": "Samsung",
+      "display_name": "Samsung Note 10+",
+      "description": "Samsung's flagship Smartphone"
+    }
+  ]
+}
